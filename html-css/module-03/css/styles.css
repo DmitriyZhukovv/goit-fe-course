@@ -2,22 +2,23 @@
     outline: 1px solid red;
 } */
 body {
-    display: block;
-    width: 900px;
-    margin: 0 auto;
     font-family: "Playfair Display", serif;
     color: #626262;
     }
+.conteiner {
+    width: 900px;
+    margin: 0 auto;
+}
+.page-header {
+    padding-top: 77px;
+    padding-bottom: 103px;
+}
+    
 .nav {
-    display: block;
-    /* box-sizing: content-box; */
-    width: 620px;
-    margin: 83px auto;
-    padding: 0px 140px; 
+    padding-left: 165px;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    /* background: #ffff33; */
 }
 .nav-item {
     display: inline-block;
@@ -30,7 +31,6 @@ margin-right: 60px;
  }
 .nav-link {
     display: block;
-    width: 95px;
     text-align: center;
     color: #626262;
     font-size: 14px;
@@ -41,51 +41,51 @@ margin-right: 60px;
 .nav a:hover {
 color: #03a9f4;
 }
-.img-sign {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-}
- h2.title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;    
-}
-.title p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
+
 .post-catalog{ 
     display: block;
-    width: 898px;
-    height: 1700px;
-    margin: 0 auto;
-    padding: 1px 0px 1px 0px;
     text-decoration: none;
+    padding: 0;
 }
 .post-list {
     display: inline-block;
-    box-sizing: border-box;
     width: 420px;
-    height: 480px;
- }
+}
 .post-list:nth-of-type(2n-1){
     margin-right: 52px;
 }
 .post-list:nth-of-type(-n+4){
     margin-bottom: 128px;
 }
-/* section.post-content{
-    display: block;
-    width: 420px; */
 
+.tematic-img {
+    margin-bottom: 31px;
+}
+.img-sign {
+    margin-bottom: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b4ad9e;
+}
+.title {
+}
+p.title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;    
+    margin-bottom: 40px;
+}
+p.text  {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
 .download {
     display: block;
     width: 165px;
-    margin: 55px 518px 70px 317px;
     box-sizing: content-box;
 }
 
