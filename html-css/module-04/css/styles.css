@@ -231,19 +231,22 @@
     color: #555252;
     font-family: "Open Sans";
  }
- div.button {
-     
-}
-button.link {
+
+a.link {
+    display: block;
     width: 160px;
     height: 50px;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: content-box;
     font-size: 16px;
     line-height: 26px;
+    text-decoration: none;
     font-family: "Open Sans";
     color: rgb(255, 255, 255);
     font-weight: 300;
-    text-align: center;
-    background-color: #4ec6acec;
+    background-color: #1abc9c;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.39);
     border-radius: 3px;
 }
