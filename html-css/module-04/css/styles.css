@@ -190,13 +190,13 @@
     background-position: center;
     background-size: cover;
  }
- div.first {
+ img.first {
     background-image: url('../img/blog1_960_720.png');
  }
- div.second {
+ img.second {
     background-image: url('../img/blog_2.png');
  }
- div.third {
+ img.third {
     background-image: url('../img/blog_3.png');
  }
  h3.blog-colum {
