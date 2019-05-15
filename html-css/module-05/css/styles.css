@@ -13,38 +13,41 @@
     max-width: 100%;
     height: auto;
 }
-
-
 .conteiner {
     width: 1110px;
     margin: 0 auto;
-    background: pink;
 }
-
-.clearfix::after {
-    display: table;
-    content: '';
-    clear: both;
+.page-header {
+    margin-bottom: px;
 }
- .page-header {
-  background-color: aqua   
- }
-
- .page-navigation {
-     padding: 34px 0;
- }
+.page-navigation{
+    margin: 0;
+    padding: 0;
+    padding-top: px;
+}
  .site-logo {
      display: inline-block;
-     vertical-align: middle;
+     text-align: center;
+ }
+ .site-logo img {
+     display: block;
+     padding: 0;
+     max-width: 100%; 
  }
 
  .site-navigation {
-     display: inline-block;
-    font-size: 14px; 
+    margin: 0;
+    padding: 0;
+    padding-top: px;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px; 
     list-style: none;
-    vertical-align: middle;
+    line-height: 13px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #1abc9c;
  }
-
  .site-navigation li {
      display: inline-block;
  }
@@ -63,17 +66,49 @@
  .site-navigation a:focus {
     color: #1abc9c;
  }
+/* header end */
+
+.banner {
+    position: relative;
+    min-height: 600px;
+    margin: 0;
+    margin-bottom: 100px;
+    background-image: linear-gradient( to  left, rgba(50, 50, 50, 0.197),
+    rgba(0, 0, 2, 0.333)),
+    url('../img/slide4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-ctrl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    border: none;
+    display: inline-block;
+    width: 103px;
+    height: 104px;
+    background-color: #4ec6ab;
+    font-size: 90px;
+    color: #ffffff;
+    text-align: center;
+}
+.slider-ctrl-prev {
+    left: 0;
+}
+.slider-ctrl-next {
+    right: 0;
+}
 
 
-
-
-
+/* new collection */
  .section-title {
     display: block;
     text-transform: uppercase;
     text-align: center;
-    font-size: 48px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 48px;
     color: #515151;
     font-family: "Roboto";
     font-weight: 900;
@@ -81,11 +116,11 @@
 
  .section-title::after {
      display: block;
+     margin: 0 auto;
      width: 164px;
      height: 7px;
      background-color: #1abc9c;
      content: '';
-     margin: 0 auto;
  }
  
  .new-collection-list{

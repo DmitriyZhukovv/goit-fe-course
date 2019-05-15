@@ -62,6 +62,7 @@ color: #03a9f4;
     margin-bottom: 31px;
 }
 .img-sign {
+    margin: 0;
     margin-bottom: 30px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -75,10 +76,12 @@ color: #03a9f4;
 p.title {
     font-weight: 400;
     font-size: 30px;
-    line-height: 36px;    
+    line-height: 36px;
+    margin: 0;    
     margin-bottom: 40px;
 }
 p.text  {
+    margin: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
