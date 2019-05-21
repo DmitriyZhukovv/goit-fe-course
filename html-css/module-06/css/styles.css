@@ -1,0 +1,239 @@
+* {
+    outline: 1px solid red;
+} 
+ 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: px;
+}
+.page-navigation{
+min-height: 65px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.site-logo {
+    display: inline-block;
+}
+.site-logo img {
+    display: block;
+    padding: 0;
+    max-width: 100%; 
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+    display: inline-block;
+    font-size: 11px; 
+    list-style: none;
+    line-height: 13px;
+    font-weight: 700;
+}
+ .site-navigation li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li:not(:last-child) {
+    margin-right: 55px;
+}
+.site-navigation a {
+    color: #1abc9c;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+ .site-navigation a:hover,
+ .site-navigation a:focus {
+    color: #f38181;
+}
+.site-navigation a:hover::after {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 3px;
+    background-color: #f38181;
+    content: '';   
+}
+
+    /* featured */
+    /* service */
+    
+ .first-section-title {
+    display: block;
+    margin: 0;
+    margin-bottom: px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #515151;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+ .first-section-title::before {
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 29px;
+    content: 'We Worke With';   
+}
+ 
+ .first-section-title::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    content: '';   
+}
+
+ .servise-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.service-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 383px;
+    padding-left: 83px;
+}
+.service-list::before {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: no-repeat;
+    background-position: center;
+}
+
+.icon-1::before {
+    background-image: url(../img/icon/ALARM.png);
+}
+.icon-2::before {
+    background-image: url(../img/icon/BOOK\ 2.png);
+}
+.icon-3::before {
+    background-image: url(../img/icon/COMPUTER\ _\ OK.png);
+}
+.icon-4::before {
+    background-image: url(../img/icon/HOME.png);
+}
+.icon-5::before {
+    background-image: url(../img/icon/IMAGE.png);
+}
+.icon-6::before {
+    background-image: url(../img/icon/LINE\ GRAPH.png);
+}
+
+ 
+.second-section-title {
+    display: block;
+    margin: 0;
+    margin-bottom: px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #515151;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+.second-section-title::before {
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 29px;
+    content: 'Who We Are';   
+}
+ 
+.second-section-title::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    content: '';   
+}
+p.second-section-info {
+    display: inline-block;
+    margin: 0;
+    margin-left: 112px;
+    padding: 0;
+    width: 980px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+.team-list {
+    list-style: none;
+}
+.image {
+    width: 381px;
+    height: 470px;
+    background-color: #95e1d3; 
+}
+.overlay-icon-list li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 58px;
+}
+.overlay-icon a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: rgb(252, 227, 138);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.facebook {
+    background-image: url(../img/icon/facebook.png);
+}
+.twitter {
+    background-image: url(../img/icon/twitter.png);
+}
+.pinterest {
+    background-image: url(../img/icon/pinterest.png);
+}
+.instagram {
+    background-image: url(../img/icon/instagram.png);
+}
+.overlay-icon a:hover {
+    background-color: rgb(149, 225, 211);;
+}
+.background {
+    background-image: linear-gradient( to  bottom, rgba(243, 129, 129, 0.3),
+    rgba(235, 193, 8, 0.333));
+} 
+

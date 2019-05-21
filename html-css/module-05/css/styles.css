@@ -7,6 +7,11 @@
 *::after {
     box-sizing: inherit;
 }
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
 
 .img {
     display: block;
@@ -18,16 +23,17 @@
     margin: 0 auto;
 }
 .page-header {
-    margin-bottom: px;
+    margin-bottom: 30px;
 }
 .page-navigation{
     margin: 0;
     padding: 0;
-    padding-top: px;
+    padding-top: 37px;
 }
  .site-logo {
+     float: left;
      display: inline-block;
-     text-align: center;
+     vertical-align: middle;
  }
  .site-logo img {
      display: block;
@@ -36,17 +42,16 @@
  }
 
  .site-navigation {
+    float: right;
     margin: 0;
     padding: 0;
-    padding-top: px;
+    padding-top: 4px;
     display: inline-block;
-    text-align: center;
+    vertical-align: middle;
     font-size: 11px; 
     list-style: none;
     line-height: 13px;
-    font-family: "Open Sans";
     font-weight: 700;
-    color: #1abc9c;
  }
  .site-navigation li {
      display: inline-block;
@@ -76,8 +81,8 @@
     background-image: linear-gradient( to  left, rgba(50, 50, 50, 0.197),
     rgba(0, 0, 2, 0.333)),
     url('../img/slide4.png');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -95,10 +100,30 @@
     text-align: center;
 }
 .slider-ctrl-prev {
-    left: 0;
+    left: 13%;
 }
 .slider-ctrl-next {
-    right: 0;
+    right: 13%;
+}
+.slider-content {
+    position: absolute; 
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.slider-content h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 37px;
+    font-size: 44px;
+}
+.slider-content p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 
@@ -127,16 +152,132 @@
      list-style: none;
      margin: 0;
      padding: 0;
+     font-size: 0px;
  }
+li.new-collection-item {
+    position: relative;
+    display: inline-block;   
+    width: 255px;
+    margin: 0;
+    padding: 0;
+}
+    
+.new-collection-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}     
+.overlay {
+    position: absolute;
+    display: block;
+    box-sizing: content-box;
+    width: 235px;
+    height: 260px;
+    background-color: #000000;
+    border: 10px solid #ffffff;
+    opacity: 0;
+    }
+    .overlay-icon {
+        margin: 0;
+        padding: 0;list-style: none;
+        font-size: 16px;
+    }
+    .overlay-icon li {
+        display: inline-block;
+    }
+.overlay a { 
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.overlay-icon a {
+    display: block; 
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-repeat: no-repeat;
+    background-position: center ;
 
- .new-collection-list li {
-     display: inline-block;
-     width: 255px;
-     height: 322px;
- }
+}
+.overlay-icon a:hover {
+    background-color: #1abc9c;
+
+}
+.icon-1{
+    background-image: url(../img/icon/1.png)
+}
+.icon-2{
+    background-image: url(../img/icon/2.png)
+}
+.icon-3{
+    background-image: url(../img/icon/3.png)
+}
+.icon-4{
+    background-color: rgba(50, 50, 50, 1);
+    background-image: url(../img/icon/4.png)
+}
+
+
+.new-collection-item:hover .overlay{
+    opacity: 0.5;
+} 
+.feature-list-info:hover .lot-name {
+    background-color: #1abc9c87;
+}
+
+.feature-list-info:hover .lot-price {
+    background-color: #7ed9c782;
+}
+    
+.new-collection-img {
+    display: block;
+    width: 255px;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+}
+.lot-name { 
+    display: inline-block;
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+    width: 200px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+    background-color: rgb(50, 50, 50)
+}
+.lot-price {
+   display: inline-block;
+   margin: 0;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   width: 55px;
+   font-size: 18px;
+   text-align: center; 
+   line-height: 32px;
+   color: #ffffff;
+   font-family: "Roboto";
+   font-weight: 900;
+   background-color: rgb(140, 140, 140);
+}
+
+
+.new-collection-item:hover .lot-name {
+    background-color: #1abc9c87
+}
+
+.new-collection-item:hover .lot-price {
+    background-color: #7ed9c782
+} 
 
  .page-footer {
-     display: block;
+     display: inline-block;
      margin: 0;
      padding: 0;
      height: 88px;
@@ -152,4 +293,4 @@
      font-family: "Open Sans";
      font-weight: 400;
      text-align: center;
- }
+    }

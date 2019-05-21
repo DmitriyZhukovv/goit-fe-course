@@ -11,57 +11,65 @@
 </head>
 <body>
     <header class="page-header conteiner">
-        <nav class="page-navigation">
+        <nav class="page-navigation clearfix">
         
             <a href="" class="site-logo">
-                <img src="./img/logo.png" alt="site logo" width="78" height="22">
+                <img src="./img/mart.png" alt="site logo" width="78" height="22">
             </a>
             <ul class="site-navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Page</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
           
         </nav>
-    </header> 
+    </header>
 
-    <section class="slider">
+    <main class="main-content">
+        <section class="slider">
         <div class="banner">
             <button class="slider-ctrl slider-ctrl-prev">&lt;</button>
             <button class="slider-ctrl slider-ctrl-next">&gt;</button>
-            <!-- <div class="Main-tour">AFFORDABLE PARIS TOURS
-                <span class="choise">TOURS / TOUR TICKETS / TOUR GUIDES</span>
-            </div> -->
+            <div class="slider-content">
+                <h2>AFFORDABLE PARIS TOURS</h2>
+                <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+            </div>    
+        </div>
         </section>
 
-    <section class="new-collection conteiner">
-        <h2 class="section-title">New Collection</h2>
-           <ul class="new-collection-list">
-            <li class="new-collection-item">
-                <img src="./img/category-1.png" alt="" width="255" height="322">
-                <h3>Woman Shirt</h3>
-                <p>$26</p>
-            </li>
-            <li class="new-collection-item">
-                <img src="./img/category-2.png" alt="" width="255" height="322">
-                <h3>Blue Thirt</h3>
-                <p>$21</p>
-            </li>
-            <li class="new-collection-item">
-                <img src="./img/category-3.png" alt="" width="255" height="322">
-                <h3>Yellow Thirt</h3>
-                <p>$31</p>
-            </li>
-            <li class="new-collection-item">
-                <img src="./img/category-4.png" alt="" width="255" height="322">
-                <h3>Cool Lingerie</h3>
-                <p>$56</p>
-            </li>
-           </ul>
-    </section>
+        <section class="new-collection conteiner">
+            <h2 class="section-title">New Collection</h2>
+            <ul class="new-collection-list">
+                <li class="new-collection-item">
+                    <img class="new-collection-img" src="/img/category-1.png" width="255" height="322">
+                    <h3 class="lot-name">Woman Shirt</h3>
+                    <p class="lot-price">$26</p>
+                </li>
+                <li class="new-collection-item">
+                        <div class="overlay">
+                                 
+                                <a class="icon-4"><span>Add To Cart</span></a>
+                            </div>
+                    <img class="new-collection-img" src="./img/category-2.png" width="255" height="322">
+                    <h3 class="lot-name">Blue Thirt</h3>
+                    <p class="lot-price">$21</p>
+                </li>
+                <li class="new-collection-item">
+                    <img class="new-collection-img" src="./img/category-3.png" width="255" height="322">
+                    <h3 class="lot-name">Yellow Thirt</h3>
+                    <p class="lot-price">$31</p>
+                </li>
+                <li class="new-collection-item">
+                    <img class="new-collection-img" src="./img/category-4.png" width="255" height="322">
+                    <h3 class="lot-name">Cool Lingerie</h3>
+                    <p class="lot-price">$56</p>
+                </li>
+                </ul>
+        </section>
+    </main>
 
     <footer class="padge-footer conteiner">
         <p>All Rights Reserved © Dokan | Designed ThemenGraph</p>

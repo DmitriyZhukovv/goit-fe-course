@@ -1,0 +1,258 @@
+/* * {
+    outline: 1px solid red;
+} */
+ 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    width: 920px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-logo img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; 
+}
+.page-nav {
+    margin: 0;
+    margin-bottom: 125px;
+    padding: 0;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.site-nav {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    text-transform: uppercase;
+    font-size: 14px; 
+    list-style: none;
+    line-height: 41px;
+    font-family: "Monserat";
+    font-weight: 400;
+}
+.site-nav li {
+    align-items: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.site-nav a{
+    color: #636363;
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: rgb(254, 209, 54);
+}
+ 
+/* header */
+.section-title {
+    margin: 0;
+    margin-bottom: 88px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Monserat";
+    font-weight: bold;
+}
+.first-section {
+    color: #000000;
+} 
+.section-title::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 300px;
+    height: 10px;
+    font-size: 10px;
+    line-height: 19px;
+    font-family: [DroidSerif];
+    font-style: italic;
+    color: rgb(164, 164, 164);
+    content:"Proin iaculis purus consequat semcure.";   
+}
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+}
+.service-list-item {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    list-style: none;
+    width: 290px;
+}
+.service-list-item::before {
+    margin: 0;
+    padding: 0;
+    display: block;
+    content: " ";
+    width: 72px;
+    height: 72px;
+    background: no-repeat;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+    background-position: center;
+    
+}
+.e-commerce::before {
+    background-image: url(../img/icons/Icon-Basket.png);   
+}
+.responcive-web::before {
+    background-image: url(../img/icons/Icon-Laptop.png);
+}
+.web-security::before {
+    background-image: url(../img/icons/Icon-Locked.png);
+}
+.service-name{
+    display: block;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+.service-name-info {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Roboto";
+    font-weight: normal;
+    color: rgb(164, 164, 164);
+}
+/* contact us */
+.bgimage {
+    width: 1400px;
+    height: 677px;
+}
+.contact-us {
+    background-color: #343434;
+    background-image: url(../img/Map\ Image.png);
+    background-position: right;
+    background-repeat: no-repeat;   
+}
+.second-section {
+    margin: 0;
+    margin-bottom: 115px;
+    padding: 0;
+    padding-top: 100px;
+    color: #ffffff;
+}
+.feetback-form {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 940px;
+    height: 215px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feetback-form li {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "monserrat";
+    font-weight: bold;
+    color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    display: inline-flex;
+    width: 455px;
+}
+input {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 455px;
+    height: 52px;
+}
+textarea.recenz {
+    width: 455px;
+    height: 210px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "monserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.recenz textarea[type="text"]:valid {
+    border-color: green;
+}
+
+.recenz textarea[type="text"]:invalid {
+    border-color: red;
+}
+.contact-form input[type="email"]:valid,
+.contact-form input[type="mane"]:valid,
+.contact-form input[type="text"]:valid {
+    border-color: green;
+}
+.contact-form input[type="email"]:invalid,
+.contact-form input[type="mane"]:invalid,
+.contact-form input[type="text"]:invalid {
+    border-color: red;
+}
+
+.send-message {
+    margin: 0;
+    margin-bottom: 115px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #fed136;
+}
+a.send-button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: "monsserat";
+    font-weight: bolt;
+    
+}
