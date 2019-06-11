@@ -1,0 +1,4 @@
+const showName = {
+    name : 'NNN',
+    
+}
