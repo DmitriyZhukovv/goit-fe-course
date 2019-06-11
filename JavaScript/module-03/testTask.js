@@ -55,7 +55,7 @@
 //   ); 
 //   console.log(
 //     formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.", 40)
-  ); 
+//   ); 
   //   /* M3 T3
 //   Напишите функцию checkForSpam(str)
   
