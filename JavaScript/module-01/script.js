@@ -23,29 +23,23 @@
 */
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
-
-let userInput = prompt('enter login', 'admin');
-console.log(userInput);
-
-
-
-if(userInput === null) {
-    alert('canceled by user');  
+const userLogin = prompt('enter login','admin');
+console.log(userLogin)
+if(userLogin === null){
+  alert('canceled by user')
+}
+if(userLogin !== adminLogin) {
+    alert('uncorrect password, try again')
+}else{
+  userLogin === adminLogin 
 };
-
-if(userInput !== adminLogin) {
-    alert('access denied, wrong login');
-};
-if(userInput === adminLogin) {
-    prompt('enter password', 'm4ngo1zh4ackz0r');
-};
-let userPassword = prompt()
+let userPassword = prompt('enter password', 'm4ngo1zh4ackz0r')
 if(userPassword === null) {
-    alert('canceled by user');
+  alert('canceled by user')
 };
-if(userPassword === adminPassword) {
-    alert('access');
-};
-if(userPassword === adminPassword) {
-    alert('denied');
-}; 
+if(userPassword !== adminPassword){
+  alert('wrong password')
+}
+if (userPassword === adminPassword){
+  alert('wellcome')
+}

@@ -37,9 +37,9 @@ const galleryItems = [
   ];
 
 
-// const container = document.querySelector('.container'),
-//  innerBox = document.querySelector('.inner-box');
-//  container.style.width = '300px';
+const container = document.querySelector('.container'),
+ innerBox = document.querySelector('.inner-box');
+ container.style.width = '300px';
 
 // const boxCildren = innerBox.children
 // const boxCildrenArr = Array.from(boxCildren)
@@ -47,18 +47,18 @@ const galleryItems = [
 
  
 
-// const arr = galleryItems.map(images => `<li><img src='${images.url}'></li>`)
+const arr = galleryItems.map(images => `<li><img src='${images.url}'></li>`)
 
-// innerBox.innerHTML = arr;
+innerBox.innerHTML = arr;
 
-// console.log(innerBox)
+console.log(innerBox)
 
 
-const container = document.createElement('div')
+// const container = document.createElement('div')
  
-container.classList.add('container')
-const body = document.body;
-body.prepend(container)
+// container.classList.add('container')
+// const body = document.body;
+// body.prepend(container)
 
 // Message Input
 
