@@ -32,7 +32,7 @@ if(userLogin !== adminLogin) {
     alert('uncorrect password, try again')
 }else{
   userLogin === adminLogin 
-};
+};break
 let userPassword = prompt('enter password', 'm4ngo1zh4ackz0r')
 if(userPassword === null) {
   alert('canceled by user')
@@ -43,3 +43,6 @@ if(userPassword !== adminPassword){
 if (userPassword === adminPassword){
   alert('wellcome')
 }
+
+
+
