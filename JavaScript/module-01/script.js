@@ -21,28 +21,29 @@
         
   🔔 PS: для удобства и чистоты кода сохраните в переменные сообщения отображаемые в alert
 */
+
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
-const userLogin = prompt('enter login','admin');
-console.log(userLogin)
-if(userLogin === null){
-  alert('canceled by user')
-}
-if(userLogin !== adminLogin) {
-    alert('uncorrect password, try again')
+let message = ' ';
+
+let userLogin = prompt('enter login','admin');
+
+if(userLogin === null) {
+  message ='canceled by user';
+}else if(userLogin !== adminLogin) {
+   message = 'uncorrect password, try again';
 }else{
-  userLogin === adminLogin 
-};break
-let userPassword = prompt('enter password', 'm4ngo1zh4ackz0r')
-if(userPassword === null) {
-  alert('canceled by user')
+  let userPassword = prompt('enter password', 'm4ngo1zh4ackz0r');
+  
+  if(userPassword === null) {
+    message = 'canceled by user';
+  }else if(userPassword !== adminPassword) {
+    message = 'wrong password';
+  }else{ 
+    message = 'wellcome';
+  };
 };
-if(userPassword !== adminPassword){
-  alert('wrong password')
-}
-if (userPassword === adminPassword){
-  alert('wellcome')
-}
+alert(message);
 
 
 
