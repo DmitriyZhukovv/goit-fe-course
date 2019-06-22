@@ -66,6 +66,14 @@ const tasksCompleted = {
   helen: 1,
   lorence: 99
 };
+const moreTask = Object.entries(tasksCompleted)
+console.log(tasksCompleted)
+for (let complited of tasksCompleted) {
+let key = complited[0];
+let value = complited[1];
+console.log(`${key}: ${value}`)
+}
+
 // ---------------------------3----------------------------
 /*  
   Напиши функцию countProps(obj), считающую кол-во свойств в объекте.

@@ -54,7 +54,7 @@ const Notepad = function Notepad(notes = []) {
     const note = this.findNoteById(id);
     if(!note) return;
     console.log(updatedContent);
-    note[updatedContent.name] = updatedContent.value;
+    // note[updatedContent.name] = updatedContent.value;
   }
   this.deleteNote = function deleteNote(id) {
     for (let i = 0; i < notes.length; i += 1) {
@@ -66,12 +66,12 @@ const Notepad = function Notepad(notes = []) {
     }
   }
 }
-    Notepad.Priority = {
-      LOW: 0,
-      NORMAL: 1,
-      HIGH: 2,
-    };
-  
+
+Notepad.Priority = {
+  LOW: 0,
+  NORMAL: 1,
+  HIGH: 2,
+};
 const initialNotes = [
   {
     id: 'id-1',

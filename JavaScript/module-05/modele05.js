@@ -1,4 +1,0 @@
-const showName = {
-    name : 'NNN',
-    
-}
