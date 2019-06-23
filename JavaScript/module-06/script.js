@@ -3,8 +3,7 @@
 class Notepad {
     constructor(notes = [id, titel, body, priority]) {
      this._notes = notes;
-      
-     console.log(this._notes)
+
     }
     
     get notes () {
@@ -75,7 +74,7 @@ class Notepad {
       HIGH: 2,
     };
   }
-  // return notes 
+
   const initialNotes = [
     {
       id: 'id-1',
@@ -122,7 +121,6 @@ console.log('Все текущие заметки: ', notepad.notes);
 notepad.updateNotePriority('id-4', Notepad.Priority.NORMAL);
 
 console.log('Заметки после обновления приоритета для id-4: ', notepad.notes);
-
 /*
  * Решил что фреймворки отложу немного, понижаю приоритет
  */
@@ -143,7 +141,6 @@ console.log(
   'Отфильтровали заметки по ключевому слову "javascript": ',
   notepad.filterNotesByQuery('javascript'),
 );
-
 /*
  * Хочу посмотреть только заметки с нормальным приоритетом
  */
@@ -157,7 +154,6 @@ console.log(
 notepad.updateNoteContent('id-3', {
   title: 'Get comfy with React.js or Vue.js',
 });
-
 console.log(
   'Заметки после обновления контента заметки с id-3: ',
   notepad.notes,
