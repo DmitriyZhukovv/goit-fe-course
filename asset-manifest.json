@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/goit-fe-course/react/my-app/static/css/main.08b7d24c.chunk.css",
+    "main.js": "/goit-fe-course/react/my-app/static/js/main.3b788e0e.chunk.js",
+    "main.js.map": "/goit-fe-course/react/my-app/static/js/main.3b788e0e.chunk.js.map",
+    "runtime~main.js": "/goit-fe-course/react/my-app/static/js/runtime~main.052b2cef.js",
+    "runtime~main.js.map": "/goit-fe-course/react/my-app/static/js/runtime~main.052b2cef.js.map",
+    "static/js/2.8661e072.chunk.js": "/goit-fe-course/react/my-app/static/js/2.8661e072.chunk.js",
+    "static/js/2.8661e072.chunk.js.map": "/goit-fe-course/react/my-app/static/js/2.8661e072.chunk.js.map",
+    "index.html": "/goit-fe-course/react/my-app/index.html",
+    "precache-manifest.fcf5185c7b44a4fbdd4021fc2cea804c.js": "/goit-fe-course/react/my-app/precache-manifest.fcf5185c7b44a4fbdd4021fc2cea804c.js",
+    "service-worker.js": "/goit-fe-course/react/my-app/service-worker.js",
+    "static/css/main.08b7d24c.chunk.css.map": "/goit-fe-course/react/my-app/static/css/main.08b7d24c.chunk.css.map"
+  }
+}
