@@ -1,0 +1,19 @@
+[
+    {"id" : 1,
+    "title" :"apple",
+    "price" : 10,
+    "icon" : "https://vignette.wikia.nocookie.net/shutkopeia/images/6/6f/Apple-2745220_960_720.png/revision/latest?cb=20180514135951&path-prefix=ru" 
+    },
+    {"id" : 2,
+    "title" :"melon",
+    "price" : 25,
+    "icon" : "https://cdn3.volusion.com/kceqm.mleru/v/vspfiles/photos/541-2.png?1547802922" 
+    },
+    {"id" : 3,
+    "title" :"watermelon",
+    "price" : 15,
+    "icon" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3XKv_hr3g0Hrf3AaJoMcNGtX9j9PFr1SAeFMhQc1_X-JCjtX" 
+    }
+
+    
+]

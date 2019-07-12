@@ -1,0 +1,15 @@
+.titleStyle {
+    font-size: 50px;
+    color: blue;
+}
+
+
+.titleDisable {
+    composes : titleStyle;
+    color : red;
+}
+
+.imgStyle {
+    width: 100px;
+    height: 100px;
+}
